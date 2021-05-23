@@ -1,6 +1,5 @@
 package org.mkl.servera;
 
-import org.mkl.ServiceAInterface;
 import org.springframework.web.bind.annotation.*;
 
 /**
@@ -11,11 +10,11 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 public class ClientAController implements ServiceAInterface {
 
-
 	@Override
-	public String sayHello(String name) {
+	public String sayHello(String name) throws Exception {
 		System.out.println("sayHello，name = " + name);
-		return "{'msg': 'hello, " + name + "'}";
+		throw new Exception();
+		// return "{'msg': 'hello, " + name + "'}";
 	}
 
 	@Override

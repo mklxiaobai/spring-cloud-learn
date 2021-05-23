@@ -1,7 +1,6 @@
-package org.mkl;
+package org.mkl.serverb;
 
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
@@ -14,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 public interface ServiceAInterface {
 
 	@GetMapping("/sayHello")
-	public String sayHello(@RequestParam("name") String name);
+	public String sayHello(@RequestParam("name") String name) throws Exception;
 
 	@GetMapping("/sayGoodBye")
 	public String sayGoodBye(@RequestParam("name") String name);

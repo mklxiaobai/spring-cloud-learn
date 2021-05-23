@@ -1,6 +1,5 @@
 package org.mkl.serverb;
 
-import org.mkl.ServiceAInterface;
 import org.springframework.cloud.openfeign.FeignClient;
 
 /**
@@ -8,6 +7,6 @@ import org.springframework.cloud.openfeign.FeignClient;
  * @date 2021/5/21
  * @description
  */
-@FeignClient(name = "ServerA")
+@FeignClient(name = "ServerA" , fallbackFactory = ServiceAClientFallbackFactory.class)
 public interface ServiceAClient extends ServiceAInterface {
 }

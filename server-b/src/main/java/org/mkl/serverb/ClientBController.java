@@ -23,7 +23,7 @@ public class ClientBController {
 	ServiceAClient serviceAClient;
 
 	@GetMapping("/sayHello")
-	public String sayHello(@RequestParam("name") String name){
+	public String sayHello(@RequestParam("name") String name) throws Exception {
 		return serviceAClient.sayHello(name);
 	}
 

@@ -20,8 +20,7 @@
     <dependencies>
         <dependency>
             <groupId>org.mkl</groupId>
-            <artifactId>server-a-api</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <artifactId>server-a-api-1</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
