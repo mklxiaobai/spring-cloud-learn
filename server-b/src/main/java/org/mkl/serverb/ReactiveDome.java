@@ -43,10 +43,7 @@ public class ReactiveDome {
 			}
 		};
 
-
-		Future<Integer> future = observable.toBlocking().toFuture();
 		observable.subscribe(observer);
-		System.out.println(future.get().toString());
 
 	}
 }
